@@ -20,7 +20,6 @@ app.use((req,res)=>{
     express.static(path.join(__dirname,"dist"))
 })
 
-
 app.listen(process.env.PORT || 3009,()=>{
     console.log(`http://localhost:${process.env.PORT}`)
 })
