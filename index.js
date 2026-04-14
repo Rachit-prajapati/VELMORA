@@ -14,11 +14,13 @@ app.use("/api",Router);
 app.use(express.static("./public"));
 app.use("/public",express.static("public"));
 app.use("/api/invoice", router);
+
 app.use(express.static(path.join(__dirname,"dist")));
 app.use((req,res)=>{
     express.static(path.join(__dirname,"dist"))
 })
 
-app.listen(process.env.PORT || 3003,()=>{
+
+app.listen(process.env.PORT || 3009,()=>{
     console.log(`http://localhost:${process.env.PORT}`)
 })
