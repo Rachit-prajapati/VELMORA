@@ -6,7 +6,6 @@ let {Router}=require("./Route/Routes");
 let {router} = require("./Route/InvoiceRouter");
 let path=require("path");
 let cors=require("cors");
-const { error } = require("console");
 app.use(cors());
 require("./DBConnection")
 
